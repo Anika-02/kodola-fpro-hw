@@ -7,12 +7,10 @@ if (!birthYear){
     alert("Шкода, що Ви не захотіли ввести свій рік народження");
 }
 else {
-    if(birthYear <= currentYear){
-        age = currentYear - Number(birthYear);
+    while(birthYear > currentYear){
+        birthYear = Number(prompt("Введіть правильно рік народження"));
     }
-    else {
-        alert("Введіть правильно рік народження")
-    }
+    age = currentYear - Number(birthYear);
 }
 
 let city = prompt("В якому місті ви живете?");
