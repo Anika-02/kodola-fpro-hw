@@ -5,6 +5,7 @@ currentYear = currentYear.getFullYear();
 
 if (!birthYear){
     alert("Шкода, що Ви не захотіли ввести свій рік народження");
+    age = "-";
 }
 else {
     while(birthYear > currentYear){
