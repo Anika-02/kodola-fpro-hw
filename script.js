@@ -1,32 +1,57 @@
-let mathOperation = prompt("Choose a math operation: add, sub, mult, div", "add");
-let firstNum = prompt("Input a first number", "2");
-let secondNum = prompt("Input a second number", "2");
+let birthYear = prompt("Введіть рік народження");
+let age = 0;
+let currentYear = new Date();
+currentYear = currentYear.getFullYear();
 
-let num1 = +firstNum;
-let num2 = +secondNum;
-
-if(String(num1) === "NaN" || String(num2) === "NaN" || !mathOperation.trim() || !firstNum.trim() || !secondNum.trim()){
-    alert("Invalid input!");
-}
-else if(num2 === 0 && mathOperation === 'div') {
-    alert("You can\'t divide by zero! Please enter another number");
+if (!birthYear){
+    alert("Шкода, що Ви не захотіли ввести свій рік народження");
 }
 else {
-    switch (mathOperation){
-        case 'add':
-            alert(`${firstNum} + ${secondNum} = ` + (+firstNum + +secondNum));
-            break;
-        case 'sub':
-            alert(`${firstNum} - ${secondNum} = ` + (+firstNum - +secondNum));
-            break;
-        case 'mult':
-            alert(`${firstNum} * ${secondNum} = ` + (+firstNum * +secondNum));
-            break;
-        case 'div':
-            alert(`${firstNum} / ${secondNum} = ` + (+firstNum / +secondNum));
-            break;
-        default:
-            alert(`Error`);
-            break;
+    if(birthYear <= currentYear){
+        age = currentYear - Number(birthYear);
+    }
+    else {
+        alert("Введіть правильно рік народження")
     }
 }
+
+let city = prompt("В якому місті ви живете?");
+if (!city){
+    alert("Шкода, що Ви не захотіли ввести своє місто");
+    city = "-";
+}
+switch(city) {
+    case 'Київ':
+        alert(`Ваш вік ${age}. Ти живеш у столиці України`)
+        break;
+    case 'Лондон':
+        alert(`Ваш вік ${age}. Ти живеш у столиці Великобританії`)
+        break;
+    case 'Вашингтон':
+        alert(`Ваш вік ${age}. Ти живеш у столиці США`)
+        break;
+    default:
+        alert(`Ваш вік ${age}. Ти живеш у місті ${city}`);
+        break;
+}
+
+let sport = prompt("Який ваш улюблений вид спорту?");
+if(!sport){
+    alert("Шкода, що Ви не захотіли ввести свій улюблений вид спорту");
+}
+
+switch(sport.toLowerCase()){
+    case "футбол":
+        alert("Круто! Хочеш стати Ліонелем Мессі?");
+        break;
+    case "волейбол":
+        alert("Круто! Хочеш стати Джордан Ларсон?");
+        break;
+    case "плавання":
+        alert("Круто! Хочеш стати Раяном Лохте?");
+        break;
+    default:
+        alert("Круто!");
+        break;
+}
+
