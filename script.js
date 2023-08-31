@@ -65,9 +65,8 @@ users.forEach(item => {
 console.log(usersPhones);
 
 //Розрахунок суми всіх балансів користувачів
-let sumOfBalances = 0;
-users.reduce((accumulator, item) => {
-    return sumOfBalances += +item.balance;
+let sumOfBalances = users.reduce((accumulator, item) => {
+    return accumulator + +item.balance;
 }, 0);
 
 console.log("Сума всіх балансів користувачів: " + sumOfBalances.toFixed(2));
