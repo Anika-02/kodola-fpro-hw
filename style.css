@@ -1,0 +1,17 @@
+body {
+    background-color: #baf1e7;
+}
+.main-wrapper {
+    background-color: #8067a1;
+    border-radius: 50px;
+    width: auto;
+    height: 1024px;
+    margin: 50px;
+    display: flex;
+}
+.text-field {
+    height: 40px;
+    width: 500px;
+    border-radius: 20px;
+    margin: 80px;
+}
