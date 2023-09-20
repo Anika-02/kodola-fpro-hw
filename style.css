@@ -1,0 +1,29 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-wrapper {
+    background-color: #afdae3;
+    height: 800px;
+    width: 1024px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image {
+    height: 600px;
+    width: 600px;
+}
+.btn-prev, .btn-next {
+    margin: 50px;
+    height: 30px;
+    width: 100px;
+    background-color: beige;
+    border-radius: 10px;
+    border-color: beige;
+}
+.btn-prev {
+    visibility: hidden;
+}
