@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registration</title>
     <link rel="stylesheet" href="registrationStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Registration</title>
 </head>
 <body>
 <div class="wrapper">
@@ -27,12 +30,14 @@
         </label>
         <span id="birthError"></span>
         <div class="radioBtn">
+            <label for="male" class="label-sub-title">Sex
             <label for="male" class="label-sub-title">
                 <input type="radio" id="male" name="sex" value="Male"/> Male
             </label>
             <label for="female" class="label-sub-title">
                 <input type="radio" id="female" name="sex" value="Female"/> Female
             </label>
+                </label>
         </div>
         <span id="sexError"></span>
         <div class="city-block">
