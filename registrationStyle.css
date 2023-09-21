@@ -12,11 +12,13 @@ body {
 }
 
 .registration-form {
-    padding: 20px;
+    padding: 20px 50px;
     width: 500px;
+    display: flex;
+    flex-direction: column;
     background: white;
     border-radius: 45px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     gap: 20px;
     overflow: hidden;
     text-align: center;
@@ -107,14 +109,14 @@ body {
 }
 
 .info-table {
-    padding: 40px 20px;
+    padding: 40px 50px;
     width: 500px;
+    flex-direction: column;
     background: white;
     border-radius: 45px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
     gap: 20px;
     overflow: hidden;
-    text-align: center;
     display: none;
 }
 

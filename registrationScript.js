@@ -5,7 +5,7 @@ function updateUserInfo(userData) {
     document.querySelector('#userSex').textContent = userData.sex;
     document.querySelector('#userCity').textContent = userData.city;
     document.querySelector('#userAddress').textContent = userData.address;
-    document.querySelector('#userLanguages').textContent = userData.language.join(', ');
+    document.querySelector('#userLanguages').textContent = userData.language.join(' ');
 }
 
 const userData = {
