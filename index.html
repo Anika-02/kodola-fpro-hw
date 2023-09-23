@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homework</title>
+    <title>Homework 13.1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<script></script>
+<div class="wrapper">
+    <div class="string-block">
+        <h3 class="title">Input three stings</h3>
+        <label for="first-string">
+            First string <input type="text" class="input-text" id="first-string">
+        </label>
+        <label for="second-string">
+            Second string <input type="text" class="input-text" id="second-string">
+        </label>
+        <label for="third-string">
+            Third string <input type="text" class="input-text" id="third-string">
+        </label>
+        <label for="result-string">
+            Result <input type="text" class="input-text" id="result-string" readonly>
+        </label>
+    </div>
+    <div class="number-block">
+        <h3 class="title">Input a five-digit number</h3>
+        <label for="number">
+            Number <input type="text" class="input-text" id="number" maxlength="5">
+        </label>
+        <label for="number">
+            Result <input type="text" class="input-text" id="result-number" readonly>
+        </label>
+    </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
