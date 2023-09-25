@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    background-color: #e3cdff;
+}
+.table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+}
+.row, .cell {
+    border: 1px solid black;
+    padding: 10px;
+}
