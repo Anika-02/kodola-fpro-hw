@@ -1,4 +1,4 @@
-let tableBody = document.querySelector('#table-body');
+let table = document.querySelector('#table');
 let number = 1;
 
 for (let i = 0; i < 10; i++) {
@@ -12,5 +12,5 @@ for (let i = 0; i < 10; i++) {
         number++;
         row.appendChild(cell);
     }
-    tableBody.appendChild(row);
+    table.appendChild(row);
 }
