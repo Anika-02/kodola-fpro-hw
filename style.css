@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    display: flex;
+    background-color: #e3cdff;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+
+.button-wrapper {
+    display: inline-block;
+    margin: 50px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    margin: 0;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-link {
+    height: 40px;
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+}
