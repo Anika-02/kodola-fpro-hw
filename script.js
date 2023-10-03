@@ -124,16 +124,7 @@ buyBtn.addEventListener('click', () => {
         total: productItem.productPrice,
     };
 
-    let existingOrder = purchasedProducts.find((existingOrder) => existingOrder.productName === order.productName);
-
-    if (existingOrder) {
-        existingOrder.quantity += order.quantity;
-        existingOrder.total += order.total;
-    } else {
-        purchasedProducts.push(order);
-    }
-
-    localStorage.setItem('purchasedProducts', JSON.stringify(purchasedProducts));
+    addOrderToLocalStorage(order);
 
     infoContainer.style.display = 'none';
     productsContainer.style.display = 'none';
@@ -154,12 +145,22 @@ let orderDetailsContainer = document.getElementById('order-details');
 
 categoriesButton.addEventListener('click', function() {
     ordersContainer.style.display = 'none';
-    categories.style.display = 'flex';
+
+    let categoriesElement = document.querySelector('#categories');
+
+    if (categoriesElement) {
+        categoriesElement.style.display = 'flex';
+    }
+
     orderDetailsContainer.style.display = 'none';
 });
 
 orderBtn.addEventListener('click', () => {
-    categories.style.display = 'none';
+    let categoriesElement = document.querySelector('#categories');
+
+    if (categoriesElement) {
+        categoriesElement.style.display = 'none';
+    }
 
     let ordersContainer = document.getElementById('orders');
     ordersContainer.style.display = 'block';
