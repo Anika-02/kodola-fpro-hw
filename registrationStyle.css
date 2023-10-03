@@ -1,0 +1,121 @@
+body {
+    background: #ede0ff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    width: 400px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .1);
+    gap: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #524f4e;
+}
+
+.label-sub-title {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #524f4e;
+    margin-top: 10px;
+}
+
+.input-text {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #524f4e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radioBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.city-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.city-select {
+    width: 100%;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #524f4e;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.saveBtn {
+    margin: 0 auto;
+    width: 200px;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #524f4e;
+    background: #d9d9d9;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.error {
+    color: #D8000C;
+}
+
+.success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    display: none;
+    margin: 10px 0;
+    padding: 20px;
+    width: 500px;
+    border-radius: 45px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.info-table {
+    padding: 40px 50px;
+    width: 500px;
+    flex-direction: column;
+    background: white;
+    border-radius: 45px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+    gap: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+.blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
