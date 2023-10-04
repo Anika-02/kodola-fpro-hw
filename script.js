@@ -1,4 +1,4 @@
-class Human {
+class Person {
     constructor(name, sex) {
         this.name = name;
         this.sex = sex;
@@ -6,13 +6,11 @@ class Human {
 }
 
 class Flat {
-    addHuman(human) {
-        if (human instanceof Human) {
-            if (!this.people) {
-                this.people = [];
-            }
-            this.people.push(human);
-            console.log(`Human ${human.name} added to flat`);
+    people = [];
+    addPerson(person) {
+        if (person instanceof Person) {
+            this.people.push(person);
+            console.log(`Human ${person.name} added to flat`);
         } else {
             console.error("Invalid value!");
         }
@@ -37,17 +35,17 @@ class House {
     }
 }
 
-const human1 = new Human('Anna', 'female');
-const human2 = new Human('Iryna', 'female');
-const human3 = new Human('Willy', 'male');
+const human1 = new Person('Anna', 'female');
+const human2 = new Person('Iryna', 'female');
+const human3 = new Person('Willy', 'male');
 
 const flat1 = new Flat();
 const flat2 = new Flat();
 const flat3 = new Flat();
 
-flat1.addHuman(human2);
-flat1.addHuman(human3);
-flat2.addHuman(human1);
+flat1.addPerson(human2);
+flat1.addPerson(human3);
+flat2.addPerson(human1);
 
 const house1 = new House(2);
 house1.addFlat(flat1);
