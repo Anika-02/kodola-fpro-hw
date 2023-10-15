@@ -1,10 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Homework</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Homework 10.2</title>
 </head>
 <body>
-<script></script>
+<header class="header">
+    <!--    <div class="registration">-->
+    <!--        <a href="registration.html" class="registration-btn">Sign Up</a>-->
+    <!--    </div>-->
+    <button class="open-btn" id="registration-btn">Sign Up</button>
+    <button class="open-btn" id="order-btn">My Orders</button>
+    <button class="open-btn" id="categories-btn">Categories</button>
+</header>
+<div class="wrapper" id="wrapper">
+    <div class="categories" id="categories">
+        <h3 class="title">Categories</h3>
+        <div class="categories-items" id="categories-items">
+        </div>
+    </div>
+    <div class="products" id="products">
+        <h3 class="title" id="products-title">Products</h3>
+        <div class="products-items" id="products-items">
+        </div>
+    </div>
+    <div class="info" id="info">
+        <h3 class="title" id="info-name"></h3>
+        <div class="info-description" id="info-description"></div>
+    </div>
+    <div id="orders" class="orders">
+        <h2 class="title">Orders</h2>
+        <div id="orders-items">
+        </div>
+    </div>
+    <div id="order-details">
+        <button id="close-details" class="close-details">✖</button>
+    </div>
+</div>
+
+<div id="order-form" class="order-form">
+    <h3 class="title">Order Details Form</h3>
+    <form id="order-details-form" class="order-details-form">
+        <label for="name" class="label-sub-title">Name:</label>
+        <input type="text" id="name" name="name" class="input-text" required>
+        <label for="surname" class="label-sub-title">Surname:</label>
+        <input type="text" id="surname" name="surname" class="input-text" required>
+        <label for="city" class="label-sub-title">City:</label>
+        <select id="city" name="city" class="input-text" required>
+            <option value="Dnipro">Dnipro</option>
+            <option value="Kharkiv">Kharkiv</option>
+            <option value="Kyiv">Kyiv</option>
+            <option value="Poltava">Poltava</option>
+        </select>
+        <label for="shipping-location" class="label-sub-title">Nova Poshta:</label>
+        <input type="text" id="shipping-location" name="shipping-location" class="input-text" required>
+        <label for="payment-type" class="label-sub-title">Payment Type:</label>
+        <select id="payment-type" name="payment-type" class="input-text" required>
+            <option value="cash-on-delivery">Cash on Delivery</option>
+            <option value="credit-card">Credit Card Payment</option>
+        </select>
+        <label for="quantity" class="label-sub-title">Quantity of Products:</label>
+        <input type="number" id="quantity" name="quantity" class="input-text" required>
+        <label for="comment" class="label-sub-title">Order Comments:</label>
+        <textarea id="comment" name="comment" class="input-text"></textarea>
+        <div class="location-button">
+            <button type="submit" class="confirm-button">Confirm</button>
+        </div>
+    </form>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
